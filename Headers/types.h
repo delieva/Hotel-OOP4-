@@ -2,16 +2,17 @@
 #define OOP4_TYPES_H
 
 #include "request.h"
+#include <vector>
 
 
 using namespace std;
 
 
-int money[] = {0, 0, 0, 0};
-string types[] = {"lux", "standart", "president", "halfLux"};
+vector<int> money = {0, 0, 0, 0};
+vector<string> types = {"lux", "standart", "president", "halfLux"};
 
 class Lux {
-    int lux[4];
+    vector<int> lux(4);
 public:
     Lux(){
         for (int i = 0; i < 4; i++){
@@ -33,7 +34,7 @@ public:
 };
 
 class HalfLux {
-    int halflux[4];
+    vector<int> halflux(4);
 public:
     HalfLux(){
         for (int i = 0; i < 4; i++){
@@ -55,7 +56,7 @@ public:
 };
 
 class President {
-    int president[4];
+    vector<int> president(4);
 public:
     President(){
         for (int i = 0; i < 4; i++){
@@ -77,7 +78,7 @@ public:
 };
 
 class Standart {
-    int standart[4];
+    vector<int> standart(4);
 public:
     Standart(){
         for (int i = 0; i < 4; i++){
