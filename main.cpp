@@ -8,7 +8,7 @@
 #include "Headers/hotel.h"
 
 using namespace std;
-
+ 
 int main() {
     Hotel <Lux, Standart, HalfLux, President> hotel({}, {}, {}, {});
     Request request("lux", 2, 2);
